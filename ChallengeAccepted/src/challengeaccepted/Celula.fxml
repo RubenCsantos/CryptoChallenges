@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root type="javafx.scene.control.ListCell" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml">
+    <graphic>
+        <AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171">
+           <children>
+              <Label fx:id="id" alignment="CENTER" text="ID " textFill="#34393b" AnchorPane.leftAnchor="0.0">
+                 <padding>
+                    <Insets left="10.0" />
+                 </padding>
+                 <font>
+                    <Font name="System Bold" size="15.0" />
+                 </font>
+              </Label>
+              <Label fx:id="title" layoutX="150.0" maxWidth="1.7976931348623157E308" textFill="#34393b" prefHeight="17.0" prefWidth="422.0" text="TITULO" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0">
+                 <padding>
+                    <Insets left="10.0" />
+                 </padding>
+                 <font>
+                    <Font name="System Bold" size="15.0" />
+                 </font>
+              </Label>
+              <Label fx:id="type" alignment="CENTER" layoutX="318.0" text="TIPO" textFill="#34393b" AnchorPane.rightAnchor="0.0">
+                 <padding>
+                    <Insets left="10.0" />
+                 </padding>
+                 <font>
+                    <Font name="System Bold" size="15.0" />
+                 </font>
+              </Label>
+           </children>
+        </AnchorPane>
+    </graphic>
+</fx:root>

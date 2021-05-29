@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="540.0" prefWidth="308.0" style="-fx-background-color: #0c2340;" stylesheets="@stylesCSS.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeaccepted.ConsultarEventoController">
+   <children>
+      <Label alignment="CENTER" layoutY="28.0" text="LISTA DE EVENTOS" textFill="#00b2ff" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="28.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <ListView fx:id="ListViewDesafios" layoutX="10.0" layoutY="99.0" opacity="0.0" prefHeight="392.0" prefWidth="289.0" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="99.0" />
+      <Label fx:id="ListDes" alignment="CENTER" layoutX="73.0" layoutY="258.0" text="Não existem eventos " textAlignment="CENTER" textFill="#00b2ff" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="258.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="68.0" prefHeight="25.0" prefWidth="46.0" text="ID" textAlignment="CENTER" textFill="#ffb94f" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="68.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="68.0" prefHeight="25.0" prefWidth="72.0" text="TÍTULOS" textAlignment="CENTER" textFill="#ffb94f" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="68.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="235.0" layoutY="68.0" prefHeight="25.0" prefWidth="46.0" text="TIPO" textAlignment="CENTER" textFill="#ffb94f" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="68.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

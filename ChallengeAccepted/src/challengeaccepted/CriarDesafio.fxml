@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="597.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeaccepted.CriarDesafioController">
+   <children>
+      <Label layoutX="225.0" layoutY="30.0" prefHeight="31.0" text="Criar Desafio">
+         <font>
+            <Font size="26.0" />
+         </font></Label>
+      <Label layoutX="47.0" layoutY="100.0" prefHeight="17.0" prefWidth="36.0" text="Tipo:" />
+      <ToggleButton fx:id="togCifra" layoutX="117.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleClickButton" selected="true" text="Cifra">
+         <toggleGroup>
+            <ToggleGroup fx:id="togGrupoTipo" />
+         </toggleGroup></ToggleButton>
+      <ToggleButton fx:id="togHash" layoutX="189.0" layoutY="95.0" mnemonicParsing="false" onAction="#handleClickButton" text="Hash" toggleGroup="$togGrupoTipo" />
+      <Label layoutX="22.0" layoutY="206.0" text="Descrição: " />
+      <TextArea fx:id="taDescricao" layoutX="117.0" layoutY="206.0" prefHeight="104.0" prefWidth="442.0" />
+      <Label layoutX="20.0" layoutY="332.0" text="Messagem: " />
+      <TextArea fx:id="taMensagem" layoutX="117.0" layoutY="332.0" prefHeight="68.0" prefWidth="442.0" />
+      <ComboBox fx:id="cbType" layoutX="117.0" layoutY="432.0" prefWidth="150.0" />
+      <TextField fx:id="tfPassword" layoutX="117.0" layoutY="487.0" />
+      <Label fx:id="lblTipo" layoutX="17.0" layoutY="437.0" prefHeight="17.0" prefWidth="88.0" text="Tipo de Cifra: " />
+      <Label fx:id="lblPassword" layoutX="33.0" layoutY="492.0" text="Password:" />
+      <Label layoutX="41.0" layoutY="150.0" text="Nome: " />
+      <TextField fx:id="tfNome" layoutX="117.0" layoutY="145.0" prefHeight="27.0" prefWidth="319.0" />
+      <Button fx:id="btnCriar" layoutX="469.0" layoutY="533.0" mnemonicParsing="false" onAction="#registarDesafio" styleClass="blue-btn" stylesheets="@stylesCSS.css" text="Criar" />
+      <Button layoutX="367.0" layoutY="533.0" mnemonicParsing="false" onAction="#cancelar" styleClass="blue-btn" stylesheets="@stylesCSS.css" text="Cancelar" />
+   </children>
+</AnchorPane>

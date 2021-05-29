@@ -1,0 +1,66 @@
+/* 
+    Created on : 3/mai/2021, 15:52:59
+    Author     : ruben
+*/
+
+.parent{
+    -fx-background-color: transparent;
+}
+
+.pane{
+    -fx-background-color: #0c2340;
+}
+
+.white-pane{
+    -fx-background-color: #ffffff;
+}
+
+.blue-panel{
+    -fx-background-color: whitesmoke;
+}
+
+.tf_box{
+    -fx-background-color: transparent;
+    -fx-border-color: #0c2340;
+    -fx-border-width: 0px 0px 1px 0px;
+}
+
+.tf{
+    -fx-background-color: transparent;
+}
+
+.blue-btn{
+    -fx-background-color: #0c2340;
+    -fx-background-radius: 5px;
+    -fx-text-fill: white;
+}
+
+.feedButton{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 5px;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+    -fx-border-radius: 1000px;
+}
+
+.feedButton:hover{
+    -fx-background-radius: 1000px;
+    -fx-background-color: #05101f;
+}
+
+.firstButtons{
+    -fx-background-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-text-fill: whitesmoke;
+    -fx-border-radius: 1000px;
+    
+}
+
+.firstButtons:hover{
+    -fx-background-radius: 1000px;
+    -fx-background-color: #05101f;
+}

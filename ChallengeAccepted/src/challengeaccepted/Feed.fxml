@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="680.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="challengeaccepted.FeedController">
+   <children>
+      <GridPane fx:id="mainGrid" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="680.0" prefWidth="980.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="271.0" minWidth="271.0" prefWidth="271.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="712.0" minWidth="10.0" prefWidth="709.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <VBox prefHeight="687.0" prefWidth="270.0" style="-fx-background-color: #0c2340;" styleClass="feedButton">
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="270.0" style="-fx-border-color: transparent;">
+                     <children>
+                        <Circle fx:id="circle" fill="WHITE" layoutX="121.0" layoutY="91.0" onMouseClicked="#goToProfile" radius="60.0" stroke="BLACK" strokeType="INSIDE">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Circle>
+                        <FontAwesomeIconView fx:id="boneco" fill="#0c2340" glyphName="USER" layoutX="97.0" layoutY="111.0" onMouseClicked="#goToProfile" size="60">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></FontAwesomeIconView>
+                        <Label fx:id="usrNameLabel" alignment="CENTER" layoutX="-14.0" layoutY="161.0" prefHeight="17.0" prefWidth="270.0" text="Nome" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Button alignment="BASELINE_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#criarDesafio" styleClass="feedButton" stylesheets="@stylesCSS.css" text="Criar Desafios">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="KEY" size="15" />
+                     </graphic>
+                     <padding>
+                        <Insets bottom="10.0" left="50.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="35.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#goToConsult" styleClass="feedButton" stylesheets="@stylesCSS.css" text="Consultar Desafios">
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="SEARCH" size="15" />
+                     </graphic>
+                     <padding>
+                        <Insets bottom="10.0" left="50.0" top="10.0" />
+                     </padding>
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" GridPane.columnIndex="1">
+               <children>
+                  <Pane fx:id="pnl" prefHeight="685.0" prefWidth="709.0" />
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+      <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#exitButton" prefHeight="41.0" prefWidth="74.0" styleClass="feedButton" stylesheets="@stylesCSS.css" text="Sair" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="100.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView fill="WHITE" glyphName="TIMES" size="15" />
+         </graphic>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
